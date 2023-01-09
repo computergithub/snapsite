@@ -1,0 +1,329 @@
+
+*{
+    font-family: Arial;
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration:none;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+width: 95%;
+    height:4.5rem;
+}
+.nav-list{
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    height: 1.5rem;
+    margin: 1.6rem 2.3rem;
+}
+header{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    justify-content:space-between;
+}
+a{
+    color:  hsl(0, 0%, 41%);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.subList p{
+    color:hsl(0, 0%, 41%);
+    font-size: 15px;
+
+}
+.subList a:hover{
+    font-weight:600;
+    color:hsl(0,0,8%)
+}
+.subList button{
+    font-family: 'Kumbh Sans', sans-serif;
+    background:none;
+    border:none;
+    display: flex;
+    align-items: center;
+}
+.subList button:hover{
+    font-weight:600;
+}
+
+.bugger{
+    
+    font-size: 1.8rem;
+    color: black;
+    display: none;
+}
+.right-list{
+    display: flex;
+    align-items: center;
+}
+
+
+.btn{
+    border: 1px solid gray;
+    margin: 0 2rem;
+    cursor:pointer;
+    padding: 0.5rem 1rem;
+    background: none;
+    border-radius: 0.7rem;
+}
+
+ li i{
+    font-size: 1.1rem;
+    padding: 0 0.2rem;
+    
+}
+.subList ul{
+    border-radius: 0.5rem; 
+    box-shadow:5px 9px 30px 3px rgb(0 0 0 / 20%);
+    cursor: pointer;
+    font-size: 0.8rem;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    
+}
+.fst-list{
+    display: none;
+}
+.subList i{
+    font-size: 1.2rem;
+}
+/*------------------------ icons button --------------------- */
+
+#fstUpBtn{
+    position: relative;
+    display: none;
+    
+}
+#upBtn{
+    display: none;
+}
+/*------------------------ End ud -down button --------------------- */
+
+.subList ul li img{
+height: 1rem;
+margin-right: 0.6rem;
+}
+.fst-list{
+    width: 7rem;
+    position: absolute;
+    left: 6rem;
+    top:4rem;
+    height: 9rem;
+
+
+}
+.scnd-list{
+    position: absolute;
+    left: 19rem;
+    top: 4rem;
+    width: 5rem;
+    display: none;
+    height: 6rem;
+    
+}
+.subList li{
+    padding: 0.455rem 0rem;
+    font-size:14px;
+
+}
+
+.btn :hover{
+    border-color:hsl(0,0,8%);
+    color:hsl(0,0,8%);
+    font-weight:bold;
+}
+.section-sec{
+    display:flex;
+    gap: 5rem;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.container{
+    width: 75%;
+    margin: 2rem auto;
+}
+.pera-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8rem;
+}
+
+.pera-sec h1{
+        line-height:1;
+    font-size: 4.3rem;
+
+}
+
+.pera-sec p{
+    padding:2rem 0;
+    font-size: 0.9rem;
+    margin-right:6rem;
+}
+.pera-btn:hover{
+    background-color: white;
+    color: #000;
+}
+.pera-btn{
+    margin: 0%;
+background: black;
+color:white;
+}
+
+/*  ------------------- aside picture   -------------------*/
+.main-avtar img{
+    width:25rem;
+}
+
+/* -------------------------------  clients -----------------------------------------------------*/
+footer{
+    margin-top:4rem;
+}
+.clients{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+justify-items: center;
+align-items: center;
+gap:0.5rem;
+}
+
+@media screen and (max-width:800px){
+    #nav{
+    flex-direction: column;
+    position: absolute;
+    right: 0rem;
+    width: 15rem;
+    height: 71.5rem;
+    justify-content: flex-start;
+    background: white;
+    display: none;
+    box-shadow:-15rem 1rem 3rem 35px rgb(0 0 0 / 60%); 
+    }
+
+    .nav-list{
+        flex-direction: column;
+        width: 10rem;
+        align-items: flex-start;
+        position: relative;
+        top: 3rem;
+        left: 1.5rem;
+    }
+    .subList{
+        padding:0.5rem 0; 
+    }
+    .subList ul {
+        box-shadow: none;
+        padding: 1rem 0rem 1rem 2rem;
+    }
+    .subList li {
+        padding: 0.455rem 0rem;
+        font-size: 17px;
+    }
+
+    .subList p {
+        font-size: 1.2rem;
+    }
+    .right-list {
+        position: relative;
+        top: 6rem;
+        flex-direction: column;
+        text-align: center;
+        align-items: normal;
+    }
+    .pera-btn{
+        padding: 1rem 2rem;
+    font-size: 20px;
+    }
+    .rightBtn{
+        margin: 1rem 1rem;
+    }
+     .section-sec{
+        gap:0.2rem;
+    }
+    .main-avtar img{
+        width:22.7rem;
+    }
+
+    .list{
+        flex-direction: column;
+    }
+    .bugger{
+    display: block;
+    }
+    
+    .bugger button{
+      background:none;
+      font-size: 1em;
+      border: none;
+    }
+    #clossList{
+        display: none;
+        position: relative;
+        z-index: 5;
+        
+    }
+
+    header h2{
+        position: absolute;
+        left: 1rem;
+    }
+    section{
+        text-align: center;
+    }
+    .container{
+        width: 95%;
+    }
+    .section-sec{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        overflow:hidden;
+    }
+    .pera-sec{
+        margin-top:2rem;
+        text-align: center;
+        gap:3rem;
+
+    }
+    .pera-sec h1 {
+        font-size: 3.2rem;
+        font-weight:600;
+        width: auto;
+    }
+    .pera-sec p {
+        padding: 2rem 5px;
+        font-size: 1.2rem;
+    margin-right: auto;
+    }
+    .fst-list {
+        position: relative;
+        left: 0rem;
+        top: 0rem;
+    
+}
+.scnd-list {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.logo img{
+    margin:1.5rem 0.5rem;
+}
+}
+@media screen and (max-width:380px) {
+    .main-avtar img{
+        width:22.4rem;
+    }
+    .pera-sec p{
+        font-size: 1.1rem;
+    }
+    
+}
